@@ -1,50 +1,41 @@
-# React + TypeScript + Vite
+# Fitness Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Table of Contents
+1. [Project Overview](#project-overview)
+2. [Features](#features)
+3. [Tech Stack](#tech-stack)
+4. [Installation](#installation)
+5. [Usage](#usage)
+6. [API Endpoints](#api-endpoints)
+7. [License](#license)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Overview
+A full-stack web application to track fitness activities, set goals, and monitor progress. Users can log workouts, view analytics, and stay motivated.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Features
+- **User Authentication**: Sign up, log in, and manage profiles.
+- **Workout Logging**: Add, edit, or delete workouts.
+- **Progress Tracking**: Visualize progress with charts and analytics.
+- **Goal Setting**: Set and track fitness goals.
+- **Responsive Design**: Works on all devices.
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Tech Stack
+- **Frontend**: HTML, CSS, JavaScript, TypeScript
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **APIs**: RESTful
+- **Deployment**: Docker, Heroku/Netlify
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+---
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Installation
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/yourusername/fitness-tracker.git
+   cd fitness-tracker
